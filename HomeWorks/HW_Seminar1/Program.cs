@@ -7,19 +7,27 @@ Console.Write("Input first number: ");
 
 num1 = Convert.ToInt32(Console.ReadLine()); 
 
-Console.WriteLine("Input second number: ");
+Console.Write("Input second number: ");
 
 num2 = Convert.ToInt32(Console.ReadLine());
 
-if (num1 > num2)
-{
-    Console.WriteLine("The bigger number is " + num1);
+if (num1 == num2)
+{ 
+    Console.WriteLine(num1 + " is equal to " + num2);
 }
 else
-{
-    Console.WriteLine("The bigger number is " + num2);
+{ 
+    
+    if (num1 > num2)
+        {
+            Console.WriteLine(num1 + " is bigger than " + num2);
+        }
+    else
+        {
+        Console.WriteLine(num2 + " is bigger than " + num1);
+        }
 }
-// Если числа не целые? 
+
 */
 
 // Задча №2 Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
@@ -76,14 +84,14 @@ else
 
 int N, current;
 
-Console.WriteLine("Input any number and i will form in line all even numbers from 1 to yours: ");
+Console.WriteLine("Input any number and i will form a line of all even numbers from 1 to yours: ");
 
 N = Convert.ToInt32(Console.ReadLine());
 
 
 while (N <= 1)
 {
-    Console.WriteLine("Nice try but input another one bigger than one! ");
+    Console.WriteLine("Nice try, but try to input another number bigger than one! ");
     N = Convert.ToInt32(Console.ReadLine()); ;
 }
 
@@ -93,7 +101,5 @@ current = 2;
 while (current <= N)
 {
     Console.Write(current + " ");
-    current = current + 2;
+    current = current + 2; // current +=2;
 }
-
-
