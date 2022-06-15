@@ -89,11 +89,38 @@ string IsAliquot(int num1, int num2)
 /*
 3. Напишите программу, которая принимает на вход число и проверяет, 
 кратно ли оно одновременно 7 и 23.
-*/
+
 
 bool IsAliquot2(int num)
 {
     if(num % 23*7 == 0) return true; // if(num % 23 ==0 && num % 7 == 0) return true
     else return false;
 }
+*/
+/*
+int FindMaxPart(int num)
 
+{
+    int dec, ed;
+
+    if (num >= 10 && num <= 99) // && - логическое "И" 
+    {
+        dec = num / 10;
+        ed = num % 10;
+
+        if(dec > ed)
+        {
+            return dec;
+        }
+        else
+        {
+            return ed;
+        }
+    }
+    else 
+    {
+        return -1;
+    }
+}
+
+*/
