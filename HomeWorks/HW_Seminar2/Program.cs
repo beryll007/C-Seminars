@@ -99,9 +99,9 @@ int FindThirdDigit (int num)
 //7 -> да
 //1 -> нет
 /*
-int WeekEnd (int num)
+int WeekEnd (int day)
 {
-    if (num == 6 ^ num == 7) return 1;
+    if (day == 6 ^ day == 7) return 1;
     else return 0; 
 }
 
@@ -127,6 +127,29 @@ else
 {Console.WriteLine("There is only seven days in a week. Restart the programm and input the number from 1 to 7, where 1 is Monday");}
 */
 
+void WeekEnd(int day)
+{
+    if(day == 1) Console.WriteLine("I'm sorry it's only Monday, the whole week is ahead");
+    
+    if(day == 2) Console.WriteLine("It's Tuesday. There are four days to the weekend");
+    
+    if(day == 3) Console.WriteLine("Wednesday is a small Friday, half of the week is in the past");
+    
+    if(day == 4) Console.WriteLine("It's Thursday, be pationed, you're two days to the weekend");
+    
+    if(day == 5) Console.WriteLine("Friday again, you're on home straight. Tomorrow is the weekend");
+    
+    if(day == 6) Console.WriteLine("Congratualtions! How are you going to spend your weekend?");
+    
+    if(day == 7) Console.WriteLine("Sunday. Use this day wisely and remeber Monday is tomorrow");
+    
+    if(day < 1 && day > 7) Console.WriteLine("There is only seven days in a week. Restart the programm and input the number from 1 to 7, where 1 is Monday");
+}
 
+Console.WriteLine("Input number of the day of the week: ");
+
+int WeekDay = Convert.ToInt32(Console.ReadLine());
+
+WeekEnd(WeekDay); 
 
 //Задачи реализуем в виде методов :)
