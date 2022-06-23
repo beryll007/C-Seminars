@@ -3,7 +3,7 @@
 //3, 5 -> 243 (3⁵)
 //2, 4 -> 16
 /*
-Console.WriteLine("This programm is to calcualte the number raised in the natural power.");
+Console.WriteLine("This program is to calcualte the number raised in the natural power.");
 Console.WriteLine("Input any number: ");
 int a = Convert.ToInt32(Console.ReadLine());
 
