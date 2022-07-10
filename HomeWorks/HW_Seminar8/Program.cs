@@ -46,7 +46,7 @@ int[,] ElementsInOrder(int[,] array)
     }
     return array;
 }
-/*
+
 Console.WriteLine("This algorythm is to create random bidimensional array and then put in order elements of the array in each row.");
 Console.WriteLine("Let's set parameters for the matrix:\nRows: ");
 int m = Convert.ToInt32(Console.ReadLine());
@@ -63,7 +63,7 @@ Console.WriteLine();
 Console.WriteLine("Now all the elements of each row are in order from lesser to greater  :\n");
 ElementsInOrder(myArray);
 ShowArray(myArray);
-*/
+
 
 /*Задача №2: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 Например, задан массив:
@@ -214,7 +214,7 @@ int[,] SpiralArray(int size, int firstElement)
     return array;
 }
 
-ShowArray(SpiralArray(4, 1));
+//ShowArray(SpiralArray(4, 1));
 
 
 

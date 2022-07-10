@@ -20,7 +20,7 @@ double[,] CreateRandomBiDimArray(int m, int n, int max, int min)
 
     return newMatrix;
 }
-/*
+
 Console.WriteLine("This program is designed to create bidimensional array filled with random real numbers\nReal numbers can be thought of as points on an infinitely long number line.");
 Console.WriteLine("If that is clear, let's set parameters for the new array.\nLines: ");
 int m = Convert.ToInt32(Console.ReadLine());
@@ -38,7 +38,7 @@ Console.WriteLine("Here is your array: ");
  Console.WriteLine();
 double[,] array = CreateRandomBiDimArray(m, n, max, min);
 
-*/
+
 //Задача№2. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
 //Например, задан массив:
 //1 4 7 2
@@ -70,7 +70,7 @@ void FindElementInBiDimArray(int[,] array, int line, int column)
 
     else Console.WriteLine($"the element lying on {line} row and {column} column is {array[line - 1, column - 1]}");
 }
-
+/*
 Console.WriteLine("This algorythm is to create random bidimensional array of integer numbers\nand then to show the element of array lying on specified position");
 Console.WriteLine();
 
@@ -96,7 +96,7 @@ Console.WriteLine("Column: ");
 int column = Convert.ToInt32(Console.ReadLine());
 
 FindElementInBiDimArray(myArray, line, column);
-
+*/
 
 
 //Задача №3. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
